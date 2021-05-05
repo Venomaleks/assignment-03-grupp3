@@ -13,7 +13,8 @@ const GO_TO_HOME_PAGE= "h1 > .router-link-active"
 
 function billPrise(billPris){
 
-    cy.get(BILL_PRISE).type(billPris)
+    //cy.get(BILL_PRISE).type(billPris)
+    cy.contains(billPris)
 }
 
 function checkBox(x){
